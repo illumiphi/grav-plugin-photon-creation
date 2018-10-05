@@ -7,24 +7,13 @@ form:
   fields:
     tabs:
       fields:
-        features:
+        header.data.creation:
           type: tab
           title: ✴ Creation
           fields:
-            header.featured:
-              type: toggle
-              label: Featured Page
-              help: select this page to be featured in home pages and banners
-              highlight: 1
-              options:
-                1: yes
-                0: no
-              default: 0
-              validate:
-                type: bool
 
 
-            header.year_completed:
+            .year_completed:
               type: text
               label: Year of Completion
               help: year the work was completed or last performed.
