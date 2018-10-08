@@ -80,12 +80,12 @@ class PhotonCreationPlugin extends Plugin
       $assets = 		$this->grav['assets'];
 
       // only load the vars if this datatype page
-      if ($page->template() == 'Creation')
+      if ($page->template() == 'creation')
       {
 
         // scripts
         $js = 'plugin://photon-creation/assets/creation.js';
-        $assets->addJs($js);
+        $assets->addJs( $js, 101, false, 'defer' );
 
         // styles
         $css = 'plugin://photon-creation/assets/creation.css';
