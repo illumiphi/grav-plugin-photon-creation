@@ -83,13 +83,17 @@ class PhotonCreationPlugin extends Plugin
       if ($page->template() == 'creation')
       {
 
-        // scripts
-        $js = 'plugin://photon-creation/assets/creation.js';
-        $assets->addJs( $js, 101, false, 'defer' );
-
         // styles
-        $css = 'plugin://photon-creation/assets/creation.css';
-        $assets->addCss($css);
+        if ($this->config->get('plugins.photon-creation.built_in_css')) {
+          $css = 'plugin://photon-creation/assets/creation.css';
+          $assets->addCss($css, 100, false, 'photon-plugins' );
+        }
+
+        // scripts
+        if ($this->config->get('plugins.photon-creation.built_in_js')) {
+          $js = 'plugin://photon-creation/assets/creation.js';
+          $assets->addJs($js, 100, false, 'defer', 'photon-plugins' );
+        }
 
       }
     }
