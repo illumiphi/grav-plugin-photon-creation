@@ -1,0 +1,10 @@
+{% set creation = page.header.data.creation %}
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "CreativeWork",
+        "name": "{{ creation.title  }}",
+        "medium": "{{ creation.medium }}"
+      }
+    </script>
