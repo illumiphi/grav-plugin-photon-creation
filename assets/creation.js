@@ -7,9 +7,9 @@ for (var i = 0; i < elements.length; i++) {
     sW = this.offsetWidth;
     sH = this.offsetHeight;
 
-    x = (100 * e.offsetX / sW) //- 100;
+    x = (200 * (e.offsetX / sW) );
     // x-= x*.1 + 50
-    y = (100 * e.offsetY / sH) //- 150;
+    y = (200 * (e.offsetY / sH) );
     // y-= y*.1 + 25
 
     cursor = `${x}% ${y}%`;

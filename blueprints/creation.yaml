@@ -13,10 +13,31 @@ form:
           fields:
 
 
-            .year_completed:
+            .dateCreated:
               type: text
-              label: Year of Completion
-              help: year the work was completed or last performed.
+              label: PHOTON.creation.dateCreated
+              help: The date on which the Creation was created or published.
+
+            # TODO: set artForm as a list in the plugin onfiguration
+            .artForm:
+              type: text
+              label: PHOTON.creation.artForm
+              help: e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc. Type: Text or URL.
+
+            .artMedium:
+              type: text
+              label: PHOTON.creation.artMedium
+              help: The material used. (e.g. Oil, Watercolour, Acrylic, Linoprint, Marble, Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil, Mixed Media, etc.) Type: Text or URL.
+
+            .artworkSurface:
+              type: text
+              label: PHOTON.creation.artworkSurface
+              help: The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc. Supersedes surface. Type: Text or URL.
+
+            .width:
+              type: text
+              label: PHOTON.creation.width
+              help: .
 
             header.creatives:
               type: list
@@ -26,23 +47,6 @@ form:
                   type: pages
                   label: Creative
                   help: Creative of this Creation
-                  size: medium
-                  classes: fancy
-                  show_all: true
-                  show_modular: false
-                  show_root: true
-                .role:
-                  type: selectize
-                  label: Role
-
-            header.partners:
-              type: list
-              label: partners
-              fields:
-                .Partner:
-                  type: pages
-                  label: Partner
-                  help: Partner of this Creation
                   size: medium
                   classes: fancy
                   show_all: true

@@ -1,10 +1,44 @@
 {% set creation = page.header.data.creation %}
 
     <script type="application/ld+json">
+
       {
         "@context": "http://schema.org",
-        "@type": "CreativeWork",
-        "name": "{{ creation.title  }}",
-        "medium": "{{ creation.medium }}"
+        "@type": "VisualArtwork",
+        "sameAs": "{{ base_url_absolute ~ page.url }}",
+        "name": "{{ header.title }}",
+        "dateCreated": "{{ creation.dateCreated }}",
+        "artForm": "{{ creation.artForm }}",
+        "artMedium": "{{ creation.artMedium }}",
+        "artEdition": "{{ creation.artEdition }}",
+        "artworkSurface": "{{ creation.artEdition }}"
+        "image": "{{ header.featured_image }}",
+        "description": "{{ header.subtitle }}",
+        "creator": [
+
+          {
+            "@type": "Person",
+            "name": "{{ config.site.title }}",
+            "sameAs": "{{ base_url_absolute ~ page.url }}/about"
+          }
+        ],
+        "width": [
+          {
+            "@type": "Distance",
+            "name": "{{ creation.width }} inches"
+          }
+        ],
+        "height": [
+          {
+            "@type": "Distance",
+            "name": "{{ creation.height }} inches"
+          }
+        ],
+        "depth": [
+          {
+            "@type": "Distance",
+            "name": "{{ creation.depth }} inches"
+          }
+        ],
       }
     </script>

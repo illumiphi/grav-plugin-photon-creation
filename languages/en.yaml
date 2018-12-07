@@ -1,0 +1,12 @@
+PHOTON:
+  creation:
+    _label: Details
+    name: Title
+    dateCreated: Date Created
+    artForm: Form
+    artMedium: Medium
+    artworkSurface: Surface
+    width: Width
+    height: Height
+    depth: Depth
+    creator: Creator
