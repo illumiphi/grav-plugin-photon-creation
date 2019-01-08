@@ -3,13 +3,13 @@ version: 0.1.0
 description: structure, style and logic for creative works - https://schema.org/CreativeWork
 icon: asterisk
 author:
-  name: illumiphi
-  email: phi@illumiphi.com
-homepage: https://github.com/i-am-phi/grav-plugin-photon-creation
-demo: https://illumiphi.com
+  name: phi ARCHITECT
+  email: phi@photon-platform.net
+homepage: https://github.com/photon-platform/grav-plugin-photon-creation
+demo: https://photon-platform.net
 keywords: datatype, photon
-bugs: https://github.com/i-am-phi/grav-plugin-photon-creation/issues
-docs: https://github.com/i-am-phi/grav-plugin-photon-creation/blob/develop/README.md
+bugs: https://github.com/photon-platform/grav-plugin-photon-creation/issues
+docs: https://github.com/photon-platform/grav-plugin-photon-creation/blob/develop/README.md
 license: MIT
 
 dependencies:
