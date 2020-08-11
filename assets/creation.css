@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* photon ✴ creation Components and Templates */
+/* media *****************************/
 /* articles/creation *****************************/
 article.creation > figure {
   max-height: 70vh;
@@ -23,7 +24,7 @@ body.creation > main > article {
   height: calc(100vh - var(--header-height) - (var(--fitz-2) * 3));
   grid-template-rows: 2fr 1fr 1fr;
 }
-@media (min-width: 72em) {
+@media (min-width: 96em) {
   body.creation > main > article {
     height: calc(100vh - (var(--fitz-2) * 2));
   }
