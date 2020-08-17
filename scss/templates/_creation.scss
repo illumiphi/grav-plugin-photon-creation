@@ -9,13 +9,4 @@ body.creation {
       grid-template-rows: 2fr 1fr 1fr;
     }
   }
-
-  @include media-bp(3) {
-    > main {
-      > article {
-        height: calc(100vh -  (var(--fitz-2) * 2));
-      }
-    }
-  }
-
 }
