@@ -79,22 +79,16 @@ class PhotonCreationPlugin extends Plugin
       $twig = 			$this->grav['twig'];
       $assets = 		$this->grav['assets'];
 
+      // styles
+      $css = 'plugin://photon-creation/assets/creation.css';
+      $assets->addCss($css, 100, false, 'photon-plugins' );
+
       // only load the vars if this datatype page
       if ($page->template() == 'creation')
       {
-
-        // styles
-        if ($this->config->get('plugins.photon-creation.built_in_css')) {
-          $css = 'plugin://photon-creation/assets/creation.css';
-          $assets->addCss($css, 100, false, 'photon-plugins' );
-        }
-
         // scripts
-        if ($this->config->get('plugins.photon-creation.built_in_js')) {
-          $js = 'plugin://photon-creation/assets/creation.js';
-          $assets->addJs($js, 100, false, 'defer', 'photon-plugins' );
-        }
-
+        $js = 'plugin://photon-creation/assets/creation.js';
+        $assets->addJs($js, 100, false, 'defer', 'photon-plugins' );
       }
     }
 
