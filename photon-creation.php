@@ -91,5 +91,4 @@ class PhotonCreationPlugin extends Plugin
         $assets->addJs($js, 100, false, 'defer', 'photon-plugins' );
       }
     }
-
 }
