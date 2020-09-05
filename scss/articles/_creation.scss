@@ -12,24 +12,24 @@ article.creation {
 
   > figure {
     // max-height: none;
-    max-height: 70vh;
+    // max-height: 70vh;
 
-    background: none;
-    > img {
-      object-fit: contain;
-      height: 100%;
-      max-height: 100%;
-      transition: .5s;
+    // background: none;
+    // > img {
+      // object-fit: contain;
+      // height: 100%;
+      // max-height: 100%;
+      // transition: .5s;
 
-      &:hover {
-        object-fit: none;
-        // width: 200%;
-        // transform: scale(2);
-      }
-    }
+      // &:hover {
+        // object-fit: none;
+        // // width: 200%;
+        // // transform: scale(2);
+      // }
+    // }
   }
 
   > header {
-    min-height: calc(24vh - var(--header-height));
+   // min-height: calc(24vh - var(--header-height));
   }
 }

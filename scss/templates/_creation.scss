@@ -5,8 +5,6 @@ body.creation {
 
   > main {
     > article {
-      height: calc(100vh - var(--header-height) - (var(--fitz-2) * 3));
-      grid-template-rows: 2fr 1fr 1fr;
     }
   }
 }
