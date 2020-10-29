@@ -1,5 +1,5 @@
 title: Creation
-@extends:
+'@extends':
     type: article
     context: blueprints://pages
 
@@ -22,17 +22,17 @@ form:
             .artForm:
               type: text
               label: PHOTON.creation.artForm
-              help: e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc. Type: Text or URL.
+              help: 'e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc. Type: Text or URL.'
 
             .artMedium:
               type: text
               label: PHOTON.creation.artMedium
-              help: The material used. (e.g. Oil, Watercolour, Acrylic, Linoprint, Marble, Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil, Mixed Media, etc.) Type: Text or URL.
+              help: 'The material used. (e.g. Oil, Watercolour, Acrylic, Linoprint, Marble, Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil, Mixed Media, etc.) Type: Text or URL.'
 
             .artworkSurface:
               type: text
               label: PHOTON.creation.artworkSurface
-              help: The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc. Supersedes surface. Type: Text or URL.
+              help: 'The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc. Supersedes surface. Type: Text or URL.'
 
             .width:
               type: text
