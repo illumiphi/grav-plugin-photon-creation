@@ -1,15 +1,15 @@
 name: photon ✴ Creation
-version: 0.1.0
+version: v0.1.0
 description: structure, style and logic for creative works - https://schema.org/CreativeWork
-icon: asterisk
 author:
   name: phi ARCHITECT
   email: phi@photon-platform.net
 homepage: https://github.com/photon-platform/grav-plugin-photon-creation
+docs: https://github.com/photon-platform/grav-plugin-photon-creation/blob/develop/README.md
+bugs: https://github.com/photon-platform/grav-plugin-photon-creation/issues
 demo: https://photon-platform.net
 keywords: datatype, photon
-bugs: https://github.com/photon-platform/grav-plugin-photon-creation/issues
-docs: https://github.com/photon-platform/grav-plugin-photon-creation/blob/develop/README.md
+icon: asterisk
 license: MIT
 
 dependencies:
