@@ -6,11 +6,11 @@
 # photon ✴ Creation
 
 ## v0.1.0
-> structure, style and logic for creative works - https://schema.org/CreativeWork
 
 ---
 
-![GitHub release](https://img.shields.io/github/v/tag/photon-platform/grav-theme-photon)
+
+> structure, style and logic for creative works - https://schema.org/CreativeWork
 
 - [configuration](#configuration)
 - [templates](#templates)
